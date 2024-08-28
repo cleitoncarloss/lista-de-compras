@@ -1,9 +1,61 @@
 import { css } from '@bake-js/-o-id/dom'
 
-function style(self) {
+function style() {
   return css`
-    h1 {
-      color: ${self.name == 'Cleiton' ? 'red' : 'blue'};
+    .header {
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+      max-width: 1440px;
+      justify-content: space-between;
+      padding: 24px 0;
+    }
+
+    .header__a {
+      cursor: pointer;
+    }
+
+    .header__logo {
+      height: 42px;
+      width: 42px;
+    }
+
+    .header__navigation {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+    }
+
+    .header__link {
+      cursor: pointer;
+      font-family: sans-serif;
+      font-weight: medium;
+    }
+
+    .header__button {
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      height: 40px;
+      padding: 0 5px;
+      position: relative;
+      width: 85px;
+    }
+
+    .header__circle {
+      background-color: #9E9EA4;
+      border-radius: 50px;
+      height: 25px;
+      left: 5px;
+      position: absolute;
+      top: 8px;
+      transition: 0.2s ease;
+      width: 30px;
+    }
+
+    .clicked {
+      left: 58%;
+      transition: 0.2s ease;
     }
   `
 }
