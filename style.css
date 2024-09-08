@@ -8,6 +8,21 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "SUSE", sans-serif;
+}
+
 img {
   max-width: 100%;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: calc(100svh - 190px);
+  padding: 16px;
 }

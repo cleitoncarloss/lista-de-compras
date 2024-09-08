@@ -3,12 +3,16 @@ import { css } from '@bake-js/-o-id/dom'
 function style() {
   return css`
     .header {
+      background-color: #f2f2f2;
+    }
+
+    .header__container {
       align-items: center;
       display: flex;
       margin: 0 auto;
       max-width: 1440px;
       justify-content: space-between;
-      padding: 24px 0;
+      padding: 24px 15px;
     }
 
     .header__a {
@@ -28,11 +32,10 @@ function style() {
 
     .header__link {
       cursor: pointer;
-      font-family: sans-serif;
-      font-weight: medium;
     }
 
     .header__button {
+      background-color: #cccccc;
       border-radius: 25px;
       border: none;
       cursor: pointer;
@@ -43,7 +46,7 @@ function style() {
     }
 
     .header__circle {
-      background-color: #9E9EA4;
+      background-color: #a5a5a5;
       border-radius: 50px;
       height: 25px;
       left: 5px;
