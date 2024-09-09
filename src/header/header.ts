@@ -12,7 +12,7 @@ class Header extends HTMLElement {
     this.attachShadow({ mode: 'open' })
   }
 
-  @on.click('button, div')
+  @on.click('.header__button, .header__circle')
   darkmode() {
     this.shadowRoot.querySelector('.header__circle').classList.toggle('clicked')
   }
