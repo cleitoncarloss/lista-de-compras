@@ -14,8 +14,8 @@ function component(self) {
           />
         </a>
         <nav class='header__navigation'>
-          <a class='header__link'>home</a>
-          <a class='header__link'>ver lista</a>
+          <a class='header__link' href='../../index.html'>Home</a>
+          <a class='header__link' href='../../lista.html'>Ver lista</a>
           <button class='header__button'>
             <div class='header__circle' clicked='${self.clicked}'></div>
           </button>

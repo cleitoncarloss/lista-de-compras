@@ -3,7 +3,8 @@ import { css } from '@bake-js/-o-id/dom'
 function style() {
   return css`
     .header {
-      background-color: #f2f2f2;
+      background-color: #fff;
+      box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.1);
     }
 
     .header__container {
@@ -31,7 +32,9 @@ function style() {
     }
 
     .header__link {
+      color: #595959;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .header__button {
