@@ -4,7 +4,7 @@ function style() {
   return css`
     .form {
       align-items: center;
-      background-color: #f2f2f2;
+      background-color: #fff;
       box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.1);
       border-radius: 6px;
       display: flex;
