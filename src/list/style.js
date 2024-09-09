@@ -31,6 +31,7 @@ function style() {
     }
 
     .list__checkbox {
+      cursor: pointer;
       margin: 0;
       height: 20px;
       width: 20px;
@@ -38,6 +39,7 @@ function style() {
 
     .list__button {
       background-color: transparent;
+      cursor: pointer;
       border: none;
       padding: 0;
     }
