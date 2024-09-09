@@ -9,6 +9,7 @@ a {
 }
 
 body {
+  background-color: #ebebeb;
   font-family: "SUSE", sans-serif;
 }
 
@@ -24,5 +25,11 @@ img {
   margin: 0 auto;
   max-width: 1440px;
   min-height: calc(100svh - 190px);
+  padding: 16px;
+}
+
+.listing {
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 16px;
 }
