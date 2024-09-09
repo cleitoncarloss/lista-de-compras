@@ -5,7 +5,7 @@ function component(self) {
   return html`
     <header class='header'>
       <div class='header__container'>
-        <a class='header__a'>
+        <a class='header__a' href='../../index.html'>
           <img
             src='${logo}'
             class='header__logo'
