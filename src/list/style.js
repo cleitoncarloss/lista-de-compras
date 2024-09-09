@@ -7,6 +7,8 @@ function style() {
       flex-direction: column;
       gap: 8px;
       list-style: none;
+      margin: 0 auto;
+      max-width: 700px;
       padding: 0;
     } 
 
