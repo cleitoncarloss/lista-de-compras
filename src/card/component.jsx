@@ -7,8 +7,9 @@ function component() {
       <h1 class="form__title">Oquê você vai comprar hoje?</h1>
 
       <div class="form__container">
-        <label class="form__label" for="item">Nome do produto:</label>
-        <input class="form__input" type="text" id="item" placeholder="digite aqui..." required />
+        <o-text-field label='Nome do produto' required name='item'>
+          <o-required-validator text='Nome do produto obrigatorio'></o-required-validator>
+        </o-text-field>
         <button class="form__button">
           Adicionar
           <img 

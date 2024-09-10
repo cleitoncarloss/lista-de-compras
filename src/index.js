@@ -1,3 +1,5 @@
+import '@bake-js/-o-id-ui'
+import '@bake-js/-o-id-ui/dist/style.css'
 import './header'
 import './card'
 import './edit'

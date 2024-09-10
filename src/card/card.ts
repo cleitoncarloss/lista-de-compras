@@ -1,6 +1,6 @@
 import component from './component'
 import { define } from '@bake-js/-o-id'
-import on, { prevent } from "@bake-js/-o-id/event"
+import on, { prevent, formData } from "@bake-js/-o-id/event"
 import { paint, repaint } from '@bake-js/-o-id/dom'
 import style from './style.js'
 import supabase from './supabase'
@@ -13,12 +13,12 @@ class Card extends HTMLElement {
     this.attachShadow({ mode: 'open' })
   }
 
-  @on.click('button', prevent)
+  @on.submit('form', prevent, formData)
   @repaint
-  async fetch(event) {
+  async fetch(data) {
     await supabase
       .from('users')
-      .insert({ name: event.target.previousElementSibling.value })
+      .insert({ name: data.item })
   }
 }
 
