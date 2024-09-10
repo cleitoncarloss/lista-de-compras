@@ -10,7 +10,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@bake-js/-o-id": "^0.0.42",
+    "@bake-js/-o-id": "^0.0.51",
     "@supabase/supabase-js": "^2.45.3"
   },
   "scripts": {
