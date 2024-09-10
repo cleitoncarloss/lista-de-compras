@@ -9,6 +9,11 @@ import style from './style.js'
 @paint(component, style)
 class Edit extends Echo(HTMLElement) {
   #product
+  #visible
+
+  get visible() {
+    return (this.#visible ??= false)
+  }
 
   get product() {
     return (this.#product ??= '')
@@ -18,6 +23,7 @@ class Edit extends Echo(HTMLElement) {
   @repaint
   set product(value) {
     this.#product = value
+    this.#visible = true
   }
 
   constructor() {
@@ -25,11 +31,16 @@ class Edit extends Echo(HTMLElement) {
     this.attachShadow({ mode: 'open' })
   }
 
-  @on.click('button', prevent)
+  @on.click('.edit__save', prevent)
   @repaint
   edit() {
     const product = this.getAttribute('list')
     this.#product = product
+  }
+
+  @on.click('.edit__close', prevent)
+  close(event) {
+    event.target.parentElement.remove()
   }
 }
 
