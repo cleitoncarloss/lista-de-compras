@@ -1,6 +1,6 @@
 import component from './component'
 import { define } from '@bake-js/-o-id'
-import { paint } from '@bake-js/-o-id/dom'
+import { paint, repaint } from '@bake-js/-o-id/dom'
 import on from "@bake-js/-o-id/event"
 import style from './style.js'
 import supabase from './supabase'
@@ -35,6 +35,15 @@ class List extends Echo(HTMLElement) {
   edit(event) {
     const product = event.target.parentElement.parentNode.parentElement.textContent
     this.dispatchEvent(new CustomEvent('click', { detail: product }))
+  }
+
+  @on.click('.delete')
+  @repaint
+  async delete(event) {
+    await supabase
+      .from('users')
+      .delete()
+      .eq('name', event.target.parentElement.parentNode.parentElement.innerText)
   }
 }
 
