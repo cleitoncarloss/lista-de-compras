@@ -1,13 +1,15 @@
 import component from './component'
 import { define } from '@bake-js/-o-id'
 import { paint } from '@bake-js/-o-id/dom'
+import on from "@bake-js/-o-id/event"
 import style from './style.js'
 import supabase from './supabase'
+import Echo from '@bake-js/-o-id/echo';
 import { willPaint } from '@bake-js/-o-id/dom';
 
 @define('c-list')
 @paint(component, style)
-class List extends HTMLElement {
+class List extends Echo(HTMLElement) {
   #product
 
   get product() {
@@ -27,6 +29,12 @@ class List extends HTMLElement {
 
     this.#product = data
     return this
+  }
+
+  @on.click('.edit')
+  edit(event) {
+    const product = event.target.parentElement.parentNode.parentElement.textContent
+    this.dispatchEvent(new CustomEvent('click', { detail: product }))
   }
 }
 

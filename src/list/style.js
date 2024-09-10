@@ -30,6 +30,10 @@ function style() {
       gap: 15px;
     }
 
+    .list__container {
+      position: relative;
+    }
+
     .list__checkbox {
       cursor: pointer;
       margin: 0;
@@ -42,6 +46,16 @@ function style() {
       cursor: pointer;
       border: none;
       padding: 0;
+    }
+
+    .list__button::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 24px;
+      top: 0;
+      width: 24px;
     }
 
     .list__img {

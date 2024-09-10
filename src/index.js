@@ -1,4 +1,5 @@
 import './header'
 import './card'
+import './edit'
 import './footer'
 import './list'
