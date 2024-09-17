@@ -8,7 +8,7 @@ function component() {
 
       <div class="form__container">
         <o-text-field label='Nome do produto' required name='item'>
-          <o-required-validator text='Nome do produto obrigatorio'></o-required-validator>
+          <o-required-validator text='Nome do produto obrigátorio'></o-required-validator>
         </o-text-field>
         <button class="form__button">
           Adicionar

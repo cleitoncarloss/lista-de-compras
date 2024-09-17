@@ -41,13 +41,6 @@ function style() {
       font-weight: 500;
     }
 
-    .form__input {
-      background-color: transparent;
-      padding: 8px 10px;
-      border: 1px solid;
-      border-radius: 5px;
-    }
-
     .form__button {
       align-items: center;
       border: none;

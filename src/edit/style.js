@@ -37,6 +37,7 @@ function style() {
 
     .edit__input {
       border: 1px solid;
+      margin: 0;
       border-radius: 5px;
       padding: 8px 10px;
     }
