@@ -57,6 +57,8 @@ class Edit extends Echo(HTMLElement) {
       .update({ name: data.item })
       .eq('id', this.#value.id)
       .select()
+
+    location.reload()
   }
 }
 
